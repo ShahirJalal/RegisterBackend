@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-alpine
 WORKDIR /app
 
 # Copy the built Spring Boot JAR file to the container
-COPY backend-0.0.3-SNAPSHOT.jar /app/app.jar
+COPY target/backend-0.0.3-SNAPSHOT.jar /app/app.jar
 
 # Expose the new port (8081 for Spring Boot)
 EXPOSE 8081
